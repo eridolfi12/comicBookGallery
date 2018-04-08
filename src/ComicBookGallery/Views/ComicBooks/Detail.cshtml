@@ -28,6 +28,12 @@
 
         <h3>Description: </h3>
         <div>@Html.Raw(description)</div>
+        <ul>
+            @foreach (var artist in artists)
+            {
+                <li>@artist</li>
+            }
+        </ul>
     </div>
 </body>
 </html>
